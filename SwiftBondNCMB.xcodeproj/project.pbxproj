@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CBE2BAF6947BDC8FBFD16C8 /* Pods_SwiftBondNCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D3719137D2B95B545C227 /* Pods_SwiftBondNCMB.framework */; };
+		94141B1C1DC44DAE00CD4993 /* FavBindingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94141B1B1DC44DAE00CD4993 /* FavBindingStoryboard.storyboard */; };
+		94141B1E1DC4505900CD4993 /* FavTestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B1D1DC4505900CD4993 /* FavTestCollectionViewController.swift */; };
+		94141B201DC450C200CD4993 /* FavTestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B1F1DC450C200CD4993 /* FavTestCollectionViewCell.swift */; };
+		94141B221DC4520200CD4993 /* FavBindingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B211DC4520200CD4993 /* FavBindingViewModel.swift */; };
+		94141B241DC45A1300CD4993 /* Nail2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B231DC45A1300CD4993 /* Nail2.swift */; };
 		94F892851DBE556A0062B8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892841DBE556A0062B8D2 /* AppDelegate.swift */; };
 		94F892871DBE556A0062B8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892861DBE556A0062B8D2 /* ViewController.swift */; };
 		94F8928A1DBE556A0062B8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F892881DBE556A0062B8D2 /* Main.storyboard */; };
 		94F8928C1DBE556A0062B8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F8928B1DBE556A0062B8D2 /* Assets.xcassets */; };
 		94F8928F1DBE556A0062B8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8928D1DBE556A0062B8D2 /* LaunchScreen.storyboard */; };
+		94F892981DBE5D280062B8D2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892971DBE5D280062B8D2 /* RootViewController.swift */; };
+		94F8929B1DBE62E30062B8D2 /* NailCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8929A1DBE62E30062B8D2 /* NailCollectionView.storyboard */; };
+		94F8929D1DBE63360062B8D2 /* NailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8929C1DBE63360062B8D2 /* NailCollectionViewController.swift */; };
+		94F8929F1DBE63DC0062B8D2 /* NailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8929E1DBE63DC0062B8D2 /* NailCollectionViewCell.swift */; };
+		94F892A11DBE64900062B8D2 /* Nail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892A01DBE64900062B8D2 /* Nail.swift */; };
+		94F892A31DBE649C0062B8D2 /* NailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892A21DBE649C0062B8D2 /* NailViewModel.swift */; };
+		94F892D21DC0CA500062B8D2 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892D11DC0CA500062B8D2 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94141B1B1DC44DAE00CD4993 /* FavBindingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavBindingStoryboard.storyboard; sourceTree = "<group>"; };
+		94141B1D1DC4505900CD4993 /* FavTestCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTestCollectionViewController.swift; sourceTree = "<group>"; };
+		94141B1F1DC450C200CD4993 /* FavTestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTestCollectionViewCell.swift; sourceTree = "<group>"; };
+		94141B211DC4520200CD4993 /* FavBindingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavBindingViewModel.swift; sourceTree = "<group>"; };
+		94141B231DC45A1300CD4993 /* Nail2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nail2.swift; sourceTree = "<group>"; };
 		94F892811DBE556A0062B8D2 /* SwiftBondNCMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBondNCMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F892841DBE556A0062B8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F892861DBE556A0062B8D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,21 @@
 		94F8928B1DBE556A0062B8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94F8928E1DBE556A0062B8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94F892901DBE556A0062B8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F892971DBE5D280062B8D2 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		94F8929A1DBE62E30062B8D2 /* NailCollectionView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NailCollectionView.storyboard; sourceTree = "<group>"; };
+		94F8929C1DBE63360062B8D2 /* NailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NailCollectionViewController.swift; sourceTree = "<group>"; };
+		94F8929E1DBE63DC0062B8D2 /* NailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NailCollectionViewCell.swift; sourceTree = "<group>"; };
+		94F892A01DBE64900062B8D2 /* Nail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nail.swift; sourceTree = "<group>"; };
+		94F892A21DBE649C0062B8D2 /* NailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NailViewModel.swift; sourceTree = "<group>"; };
+		94F892A41DBE66BB0062B8D2 /* SwiftBondNCMB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftBondNCMB-Bridging-Header.h"; sourceTree = "<group>"; };
+		94F892A91DBE84710062B8D2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftBondNCMB-egfmbonsgsldsoawvakiwatemqmq/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		94F892AB1DBE84760062B8D2 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Pods/../build/Debug-iphoneos/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		94F892AE1DBE856C0062B8D2 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftBondNCMB-egfmbonsgsldsoawvakiwatemqmq/Build/Products/Debug-iphonesimulator/Bond/Bond.framework"; sourceTree = "<group>"; };
+		94F892B01DBE85710062B8D2 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Pods/../build/Debug-iphoneos/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		94F892D11DC0CA500062B8D2 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		CB854DB510C515F0C2D05D24 /* Pods-SwiftBondNCMB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBondNCMB.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBondNCMB/Pods-SwiftBondNCMB.release.xcconfig"; sourceTree = "<group>"; };
+		CD3D3719137D2B95B545C227 /* Pods_SwiftBondNCMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBondNCMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF256AD90925CA5A0CC4CE13 /* Pods-SwiftBondNCMB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBondNCMB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBondNCMB/Pods-SwiftBondNCMB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +62,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBE2BAF6947BDC8FBFD16C8 /* Pods_SwiftBondNCMB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94141B1A1DC44D7500CD4993 /* FavBindingCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				94141B1B1DC44DAE00CD4993 /* FavBindingStoryboard.storyboard */,
+				94141B1D1DC4505900CD4993 /* FavTestCollectionViewController.swift */,
+				94141B1F1DC450C200CD4993 /* FavTestCollectionViewCell.swift */,
+				94141B211DC4520200CD4993 /* FavBindingViewModel.swift */,
+				94141B231DC45A1300CD4993 /* Nail2.swift */,
+			);
+			name = FavBindingCollectionView;
+			sourceTree = "<group>";
+		};
 		94F892781DBE556A0062B8D2 = {
 			isa = PBXGroup;
 			children = (
 				94F892831DBE556A0062B8D2 /* SwiftBondNCMB */,
 				94F892821DBE556A0062B8D2 /* Products */,
+				FFA0A942E585B6D15D04DFBC /* Pods */,
+				CBDAAF1003C9F0B6F3391BED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +102,52 @@
 		94F892831DBE556A0062B8D2 /* SwiftBondNCMB */ = {
 			isa = PBXGroup;
 			children = (
+				94141B1A1DC44D7500CD4993 /* FavBindingCollectionView */,
+				94F892991DBE62550062B8D2 /* ViewModel + CollectionView */,
 				94F892841DBE556A0062B8D2 /* AppDelegate.swift */,
 				94F892861DBE556A0062B8D2 /* ViewController.swift */,
 				94F892881DBE556A0062B8D2 /* Main.storyboard */,
 				94F8928B1DBE556A0062B8D2 /* Assets.xcassets */,
 				94F8928D1DBE556A0062B8D2 /* LaunchScreen.storyboard */,
 				94F892901DBE556A0062B8D2 /* Info.plist */,
+				94F892971DBE5D280062B8D2 /* RootViewController.swift */,
+				94F892A41DBE66BB0062B8D2 /* SwiftBondNCMB-Bridging-Header.h */,
 			);
 			path = SwiftBondNCMB;
+			sourceTree = "<group>";
+		};
+		94F892991DBE62550062B8D2 /* ViewModel + CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				94F8929A1DBE62E30062B8D2 /* NailCollectionView.storyboard */,
+				94F8929C1DBE63360062B8D2 /* NailCollectionViewController.swift */,
+				94F8929E1DBE63DC0062B8D2 /* NailCollectionViewCell.swift */,
+				94F892A01DBE64900062B8D2 /* Nail.swift */,
+				94F892A21DBE649C0062B8D2 /* NailViewModel.swift */,
+				94F892D11DC0CA500062B8D2 /* EditViewController.swift */,
+			);
+			name = "ViewModel + CollectionView";
+			sourceTree = "<group>";
+		};
+		CBDAAF1003C9F0B6F3391BED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94F892B01DBE85710062B8D2 /* AlamofireImage.framework */,
+				94F892AE1DBE856C0062B8D2 /* Bond.framework */,
+				94F892AB1DBE84760062B8D2 /* AlamofireImage.framework */,
+				94F892A91DBE84710062B8D2 /* Alamofire.framework */,
+				CD3D3719137D2B95B545C227 /* Pods_SwiftBondNCMB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA0A942E585B6D15D04DFBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF256AD90925CA5A0CC4CE13 /* Pods-SwiftBondNCMB.debug.xcconfig */,
+				CB854DB510C515F0C2D05D24 /* Pods-SwiftBondNCMB.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94F892931DBE556A0062B8D2 /* Build configuration list for PBXNativeTarget "SwiftBondNCMB" */;
 			buildPhases = (
+				9C1490FA72E5846A70271837 /* [CP] Check Pods Manifest.lock */,
 				94F8927D1DBE556A0062B8D2 /* Sources */,
 				94F8927E1DBE556A0062B8D2 /* Frameworks */,
 				94F8927F1DBE556A0062B8D2 /* Resources */,
+				D7D097C10B4C8EF90B888CE4 /* [CP] Embed Pods Frameworks */,
+				A5AD425571CC9388F06E1BEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,21 +211,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94141B1C1DC44DAE00CD4993 /* FavBindingStoryboard.storyboard in Resources */,
 				94F8928F1DBE556A0062B8D2 /* LaunchScreen.storyboard in Resources */,
 				94F8928C1DBE556A0062B8D2 /* Assets.xcassets in Resources */,
 				94F8928A1DBE556A0062B8D2 /* Main.storyboard in Resources */,
+				94F8929B1DBE62E30062B8D2 /* NailCollectionView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C1490FA72E5846A70271837 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5AD425571CC9388F06E1BEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBondNCMB/Pods-SwiftBondNCMB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D097C10B4C8EF90B888CE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBondNCMB/Pods-SwiftBondNCMB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94F8927D1DBE556A0062B8D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94141B241DC45A1300CD4993 /* Nail2.swift in Sources */,
+				94F892D21DC0CA500062B8D2 /* EditViewController.swift in Sources */,
+				94F8929D1DBE63360062B8D2 /* NailCollectionViewController.swift in Sources */,
 				94F892871DBE556A0062B8D2 /* ViewController.swift in Sources */,
+				94F8929F1DBE63DC0062B8D2 /* NailCollectionViewCell.swift in Sources */,
+				94141B201DC450C200CD4993 /* FavTestCollectionViewCell.swift in Sources */,
+				94F892A11DBE64900062B8D2 /* Nail.swift in Sources */,
 				94F892851DBE556A0062B8D2 /* AppDelegate.swift in Sources */,
+				94F892A31DBE649C0062B8D2 /* NailViewModel.swift in Sources */,
+				94141B221DC4520200CD4993 /* FavBindingViewModel.swift in Sources */,
+				94141B1E1DC4505900CD4993 /* FavTestCollectionViewController.swift in Sources */,
+				94F892981DBE5D280062B8D2 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -203,6 +353,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -211,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -241,29 +393,46 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		94F892941DBE556A0062B8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF256AD90925CA5A0CC4CE13 /* Pods-SwiftBondNCMB.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireImage",
+				);
 				INFOPLIST_FILE = SwiftBondNCMB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orfool.SwiftBondNCMB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/SwiftBondNCMB-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		94F892951DBE556A0062B8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB854DB510C515F0C2D05D24 /* Pods-SwiftBondNCMB.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireImage",
+				);
 				INFOPLIST_FILE = SwiftBondNCMB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orfool.SwiftBondNCMB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/SwiftBondNCMB-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +455,7 @@
 				94F892951DBE556A0062B8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

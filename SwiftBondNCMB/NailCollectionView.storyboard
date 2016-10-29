@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yOG-LA-W46">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nail Collection View Controller-->
+        <scene sceneID="8OI-tc-Uz9">
+            <objects>
+                <viewController id="yOG-LA-W46" customClass="NailCollectionViewController" customModule="SwiftBondNCMB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JB5-nw-2er"/>
+                        <viewControllerLayoutGuide type="bottom" id="nTG-ht-nr6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZFn-Rj-3xT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="frR-3g-9UG">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PTa-tk-7qk">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="LjW-W7-6YS" customClass="NailCollectionViewCell" customModule="SwiftBondNCMB" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c38-E6-Xgj">
+                                                    <rect key="frame" x="16" y="16" width="68" height="68"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="c38-E6-Xgj" firstAttribute="leading" secondItem="LjW-W7-6YS" secondAttribute="leadingMargin" constant="8" id="2R6-UV-dqV"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="c38-E6-Xgj" secondAttribute="bottom" constant="8" id="9lt-Zn-jh2"/>
+                                            <constraint firstItem="c38-E6-Xgj" firstAttribute="top" secondItem="LjW-W7-6YS" secondAttribute="topMargin" constant="8" id="HRW-9o-gd0"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="c38-E6-Xgj" secondAttribute="trailing" constant="8" id="Psy-hu-Lt0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="c38-E6-Xgj" id="NZa-12-5Zz"/>
+                                            <segue destination="sLe-76-q6e" kind="show" id="But-2u-RrS"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="frR-3g-9UG" firstAttribute="top" secondItem="JB5-nw-2er" secondAttribute="bottom" id="7bb-fp-Nzc"/>
+                            <constraint firstAttribute="trailing" secondItem="frR-3g-9UG" secondAttribute="trailing" id="BoH-yo-Vx9"/>
+                            <constraint firstItem="nTG-ht-nr6" firstAttribute="top" secondItem="frR-3g-9UG" secondAttribute="bottom" id="h8Z-qo-pzC"/>
+                            <constraint firstItem="frR-3g-9UG" firstAttribute="leading" secondItem="ZFn-Rj-3xT" secondAttribute="leading" id="zX8-xA-mfJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="frR-3g-9UG" id="k4o-MC-7Iy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFD-Rn-Dqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="241"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="Zlt-m0-cTE">
+            <objects>
+                <viewController storyboardIdentifier="editVC" id="sLe-76-q6e" customClass="EditViewController" customModule="SwiftBondNCMB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uzN-jE-dO9"/>
+                        <viewControllerLayoutGuide type="bottom" id="g8Q-nc-IGr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2cE-Ty-Lxg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3E-6o-MAU">
+                                <rect key="frame" x="180" y="28" width="240" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-uv-tWn">
+                                <rect key="frame" x="305" y="202" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ozw-lE-vtw">
+                                <rect key="frame" x="305" y="165" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DtZ-ue-yjy">
+                                <rect key="frame" x="305" y="285" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="サロン名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNe-PD-7ep">
+                                <rect key="frame" x="187" y="168" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re8-aL-nO1">
+                                <rect key="frame" x="285" y="392" width="30" height="30"/>
+                                <state key="normal" title="更新"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="費用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T2-zd-N5e">
+                                <rect key="frame" x="208" y="205" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メッセージ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyb-BO-6S3">
+                                <rect key="frame" x="157" y="240" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jj2-cw-xfR">
+                                <rect key="frame" x="305" y="240" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="averageCostTextField" destination="Ase-uv-tWn" id="Vo6-tz-4h2"/>
+                        <outlet property="commentTextField" destination="jj2-cw-xfR" id="X47-1f-eEx"/>
+                        <outlet property="imageView" destination="Z3E-6o-MAU" id="uUj-hq-J3S"/>
+                        <outlet property="salonNameTextField" destination="Ozw-lE-vtw" id="NY6-C7-SEW"/>
+                        <outlet property="updateButton" destination="Re8-aL-nO1" id="o4h-Cw-u6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kU-5K-P4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="241"/>
+        </scene>
+    </scenes>
+</document>
