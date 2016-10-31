@@ -13,6 +13,7 @@
 		94141B201DC450C200CD4993 /* FavTestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B1F1DC450C200CD4993 /* FavTestCollectionViewCell.swift */; };
 		94141B221DC4520200CD4993 /* FavBindingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B211DC4520200CD4993 /* FavBindingViewModel.swift */; };
 		94141B241DC45A1300CD4993 /* Nail2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B231DC45A1300CD4993 /* Nail2.swift */; };
+		94141B261DC475BE00CD4993 /* Fav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141B251DC475BE00CD4993 /* Fav.swift */; };
 		94F892851DBE556A0062B8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892841DBE556A0062B8D2 /* AppDelegate.swift */; };
 		94F892871DBE556A0062B8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F892861DBE556A0062B8D2 /* ViewController.swift */; };
 		94F8928A1DBE556A0062B8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F892881DBE556A0062B8D2 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		94141B1F1DC450C200CD4993 /* FavTestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTestCollectionViewCell.swift; sourceTree = "<group>"; };
 		94141B211DC4520200CD4993 /* FavBindingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavBindingViewModel.swift; sourceTree = "<group>"; };
 		94141B231DC45A1300CD4993 /* Nail2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nail2.swift; sourceTree = "<group>"; };
+		94141B251DC475BE00CD4993 /* Fav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fav.swift; sourceTree = "<group>"; };
 		94F892811DBE556A0062B8D2 /* SwiftBondNCMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBondNCMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F892841DBE556A0062B8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F892861DBE556A0062B8D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				94141B1F1DC450C200CD4993 /* FavTestCollectionViewCell.swift */,
 				94141B211DC4520200CD4993 /* FavBindingViewModel.swift */,
 				94141B231DC45A1300CD4993 /* Nail2.swift */,
+				94141B251DC475BE00CD4993 /* Fav.swift */,
 			);
 			name = FavBindingCollectionView;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				94141B221DC4520200CD4993 /* FavBindingViewModel.swift in Sources */,
 				94141B1E1DC4505900CD4993 /* FavTestCollectionViewController.swift in Sources */,
 				94F892981DBE5D280062B8D2 /* RootViewController.swift in Sources */,
+				94141B261DC475BE00CD4993 /* Fav.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

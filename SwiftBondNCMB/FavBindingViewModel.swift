@@ -7,12 +7,19 @@ import NCMB
 class FavBindingViewModel {
     
     internal let nails = ObservableArray<Nail2>()
+    internal let favs = ObservableArray<Fav>()
     internal var nailComment = Observable<String?>("")
     internal let nailObjectId = Observable<String?>("")
     internal let nailImagePath = Observable<String?>("")
     internal let salonName = Observable<String?>("")
     internal let message = Observable<String?>("")
     internal let averageCost = Observable<String?>("")
+    internal var favArray: NSMutableArray?
+    internal var favArray2 = [""]
+    var currentSkip: Int32? = 0
+    
+    var favNCMBObject: NSArray = NSArray()
+    internal var favs2 = ObservableArray<NCMBObject>()
     
     private let urlString = "https://itunes.apple.com/search"
     private let parameters = ["term":"Swift",
@@ -53,7 +60,7 @@ class FavBindingViewModel {
         var query: NCMBQuery?
         query = NCMBQuery(className: "image")
         query!.orderByDescending("createDate")
-        query!.limit = 1000
+        query!.limit = 10
         query!.findObjectsInBackgroundWithBlock({(objects, error) in
             
             if error == nil {
@@ -65,6 +72,7 @@ class FavBindingViewModel {
                         let nail = Nail2(nail: objects[i] as! NCMBObject)
                         self.nails.append(nail)
                     }
+                    self.currentSkip = 10
                     
                 }
                 
@@ -73,6 +81,92 @@ class FavBindingViewModel {
                 print(error.localizedDescription)
             }
         })
+    }
+    
+    func loadImageDataMore() {
+        
+        var query: NCMBQuery?
+        query = NCMBQuery(className: "image")
+        query!.orderByDescending("createDate")
+        query!.limit = 10
+//        query!.whereKey("createDate", lessThanOrEqualTo: self.currentSortKey)
+        query!.skip = self.currentSkip!
+        query!.findObjectsInBackgroundWithBlock({(objects, error) in
+            
+            if error == nil {
+                
+                if objects.count > 0 {
+                    
+                    //                    self.imageInfo = objects
+                    for i in 0..<objects.count {
+                        let nail = Nail2(nail: objects[i] as! NCMBObject)
+                        self.nails.append(nail)
+                        
+                    }
+                    self.currentSkip = self.currentSkip! + 10
+                }
+                
+            } else {
+                print("エラー")
+                print(error.localizedDescription)
+            }
+        })
+    }
+    func loadFavData() {
+        
+        var query: NCMBQuery?
+        query = NCMBQuery(className: "Fav")
+        query!.orderByDescending("createDate")
+        query!.whereKey("myName", equalTo: NCMBUser.currentUser().userName)
+        query!.whereKey("favFlg", equalTo: true)
+//        query!.whereKey("myName", equalTo: "oSOqdRkJvK")
+        query!.limit = 1000
+        query!.findObjectsInBackgroundWithBlock({(objects, error) in
+            
+            if error == nil {
+                
+                if objects.count > 0 {
+//                    self.favNCMBObject = objects
+//                    self.favs.array = objects
+                    //                    self.imageInfo = objects
+                    for i in 0..<objects.count {
+                        
+//                        self.favNCMBObject = objects as? NCMBObject
+                        let fav = Fav(fav: objects[i] as! NCMBObject)
+                        self.favs.append(fav)
+                        let imageObjectId: String = ((objects[i].objectForKey("imageObjectId") as? String))!
+//                        self.favArray2.append((objects[i].objectForKey("imageObjectId") as! String))
+                        if (((objects[i].objectForKey("favFlg") as? Bool))!) {
+                                self.favArray2.append(imageObjectId)
+                        }
+                        
+//                        self.favArray!.addObject(fav.objectId.value!)
+                    }
+                    
+                }
+                
+            } else {
+                print("エラー")
+                print(error.localizedDescription)
+            }
+        })
+    }
+    func setFavImage(favImageView: UIImageView, targetDataSource: Nail2) {
+        let targetObjectId = targetDataSource.objectId
+        
+        for i in 0..<favArray2.count {
+            if (favArray2[i] == targetObjectId.value!) {
+                favImageView.image = UIImage(named: "heart_like.jpg")
+                return
+            } else {
+                favImageView.image = UIImage(named: "heart_unlike.jpg")
+            }
+        }
+//        if ((favArray?.containsObject(targetObjectId.value!)) != nil) {
+//            favImageView.image = UIImage(named: "heart_like.jpg")
+//        } else {
+//            favImageView.image = UIImage(named: "heart_unlike.jpg")
+//        }
     }
     
     func registerSalonInfomation() {

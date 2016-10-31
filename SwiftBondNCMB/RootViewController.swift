@@ -1,5 +1,5 @@
 import UIKit
-
+import NCMB
 class RootViewController: UITableViewController {
     
     private var items: [(title: String, className: String)]!
@@ -15,6 +15,40 @@ class RootViewController: UITableViewController {
             (title: "ViewModel + TableView", className: "FavBindingStoryboard"),
             (title: "ViewModel + CollectionView", className: "NailCollectionView"),
         ]
+        
+        // メールアドレスとパスワードでログイン
+        NCMBUser.logInWithMailAddressInBackground("hrkedz@gmail.com", password: "Megatonh4k2", block: ({(user, error) in
+            if (error != nil){
+                // ログイン失敗時の処理
+//                self.modalView.dismissViewControllerAnimated(false, completion: nil)
+//                let alertController = UIAlertController(title: "ログイン失敗です。", message: "IDまたはパスワードに誤りがあります。", preferredStyle: .Alert)
+//                
+//                let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: {
+//                    (action:UIAlertAction!) -> Void in
+//                    //                    self.closeMyView()
+//                })
+//                
+//                alertController.addAction(defaultAction)
+//                
+//                self.presentViewController(alertController, animated: true, completion: nil)
+                
+            }else{
+                print("ログイン")
+                // ログイン成功時の処理
+//                self.modalView.dismissViewControllerAnimated(false, completion: nil)
+//                let alertController = UIAlertController(title: "ログイン", message: "ログインしました。", preferredStyle: .Alert)
+//                
+//                let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: {
+//                    (action:UIAlertAction!) -> Void in
+//                    self.closeMyView()
+//                })
+//                alertController.addAction(defaultAction)
+//                
+//                self.presentViewController(alertController, animated: true, completion: nil)
+                
+            }
+        }))
+
     }
     
     override func didReceiveMemoryWarning() {

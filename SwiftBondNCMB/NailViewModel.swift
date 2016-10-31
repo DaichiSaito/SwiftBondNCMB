@@ -92,12 +92,12 @@ class NailViewModel {
 //            
 //        }
         // objectId
-        targetSalonInfomation.objectId = self.nailObjectId.value
+        targetSalonInfomation.objectId = self.getCurrentNail().objectId.value
         
         // メッセージ
-        targetSalonInfomation.setObject(self.message.value, forKey:"message")
+        targetSalonInfomation.setObject(self.getCurrentNail().message.value!, forKey:"message")
         // サロン名
-        targetSalonInfomation.setObject(self.salonName.value, forKey:"salonName")
+        targetSalonInfomation.setObject(self.getCurrentNail().salonName.value!, forKey:"salonName")
 //        // 住所（地域１）
 //        targetSalonInfomation.setObject(param1["locationPrefecture"], forKey:"locationPrefecture")
 //        // 住所（地域２）
